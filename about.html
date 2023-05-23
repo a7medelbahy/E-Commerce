@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bolder" href="index.html"
+          ><img
+            src="./images/logo.png"
+            class="img-fluid w-25 me-2"
+            alt="logo"
+            title="Elbahy"
+          />El<span>b</span>ahy</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <button class="button main-button cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cart -->
+    <div class="shop-cart">
+      <div class="cart-container d-flex flex-column justify-content-between">
+        <div
+          class="cart-count p-2 rounded-2 border border-1 bg-light d-flex flex-wrap gap-3 align-items-center justify-content-center justify-content-sm-between"
+        >
+          <p className="m-0">
+            <button class="button main-button close-cart1 py-1 px-2 me-1">
+              <i class="fa-solid fa-angles-left fw-bolder"></i>
+            </button>
+            Your Have
+            <span class="p-1 rounded-3 cart-num fw-bold"> 0 </span>
+            Items
+          </p>
+          <button class="button secondary-button clear-cart py-1 px-2">
+            X
+          </button>
+        </div>
+        <div
+          class="empty-cart h-100 d-flex flex-column justify-content-center align-items-center"
+        >
+          <img
+            src="./images/emptybag.png"
+            class="img-fluid d-block"
+            alt="empty bag"
+          />
+          <button class="button main-button close-cart2 fw-bold mt-4 px-3">
+            <i class="fa-solid fa-angles-left me-2"></i>Back to Store
+          </button>
+        </div>
+
+        <div
+          class="cart-items p-2 rounded-3 mt-2 d-flex flex-column gap-2"
+        ></div>
+        <p class="p-2 rounded-4 w-100 bg-black text-white text-center">
+          Your Total Price Is: $ <span class="total-price"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div
+      class="about-header d-flex justify-content-center align-items-center section-padding"
+    >
+      <h1 class="text-white fw-bolder">About Us</h1>
+    </div>
+
+    <!-- Story -->
+    <div class="our-story section-padding">
+      <div
+        class="container d-flex flex-column gap-5 justify-content-center align-items-center text-center"
+      >
+        <h2 class="fw-bolder display-3">Our Story</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aperiam
+          ipsum. Quam libero ipsa sed repellat perferendis, nemo ut nulla.
+          Libero possimus exercitationem voluptas, natus dolorum provident
+          dolore dicta temporibus a et amet doloremque quod qui aliquid
+          molestias iste nesciunt consectetur numquam maiores ad quaerat non.
+          Accusantium natus accusamus provident!
+        </p>
+        <img
+          src="./images/story.png"
+          class="img-fluid w-100 d-block"
+          alt="our story"
+        />
+      </div>
+    </div>
+
+    <!-- Journey -->
+    <div class="our-journey py-5">
+      <div
+        class="container d-flex flex-column gap-5 justify-content-center align-items-center text-center"
+      >
+        <h2 class="fw-bolder display-3">Journey started from</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut
+          adipisci voluptas ab consequuntur voluptates eaque recusandae sed,
+          accusantium veritatis cum tempora itaque eveniet distinctio ipsam
+          libero reprehenderit. Autem ad eaque unde quo laboriosam! Quia iusto,
+          hic, natus sint a deserunt recusandae delectus sit sequi nihil
+          accusamus! Aliquid, ea error.
+        </p>
+        <img
+          src="./images/journey.png"
+          class="img-fluid w-100 d-block"
+          alt="our story"
+        />
+      </div>
+    </div>
+
+    <!-- Team Members -->
+    <div class="our-team section-padding">
+      <div
+        class="container d-flex flex-column gap-5 justify-content-center align-items-center text-center"
+      >
+        <h2 class="fw-bolder display-3">Meet Our Team</h2>
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="team-member position-relative p-2 rounded-3 overflow-hidden bg-light"
+            >
+              <img
+                src="./images/team-1.jpg"
+                class="img-fluid w-100 d-block rounded-3"
+                alt="team"
+              />
+              <div
+                class="team-details d-flex flex-column justify-content-evenly align-items-center p-4 rounded-4"
+              >
+                <div class="data">
+                  <p>Joe Mosa</p>
+                  <small class="fw-bold text-black-50">CEO</small>
+                </div>
+                <ul
+                  class="d-flex align-items-center justify-content-center gap-2"
+                >
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="team-member position-relative p-2 rounded-3 overflow-hidden bg-light"
+            >
+              <img
+                src="./images/team-2.jpg"
+                class="img-fluid w-100 d-block rounded-3"
+                alt="team"
+              />
+              <div
+                class="team-details d-flex flex-column justify-content-evenly align-items-center p-4 rounded-4"
+              >
+                <div class="data">
+                  <p>Jasmin Mike</p>
+                  <small class="fw-bold text-black-50">Manager</small>
+                </div>
+                <ul
+                  class="d-flex align-items-center justify-content-center gap-2"
+                >
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="team-member position-relative p-2 rounded-3 overflow-hidden bg-light"
+            >
+              <img
+                src="./images/team-3.jpg"
+                class="img-fluid w-100 d-block rounded-3"
+                alt="team"
+              />
+              <div
+                class="team-details d-flex flex-column justify-content-evenly align-items-center p-4 rounded-4"
+              >
+                <div class="data">
+                  <p>Mike losa</p>
+                  <small class="fw-bold text-black-50">HR</small>
+                </div>
+                <ul
+                  class="d-flex align-items-center justify-content-center gap-2"
+                >
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="team-member position-relative p-2 rounded-3 overflow-hidden bg-light"
+            >
+              <img
+                src="./images/team-4.jpg"
+                class="img-fluid w-100 d-block rounded-3"
+                alt="team"
+              />
+              <div
+                class="team-details d-flex flex-column justify-content-evenly align-items-center p-4 rounded-4"
+              >
+                <div class="data">
+                  <p>Julia Robert</p>
+                  <small class="fw-bold text-black-50">Designer</small>
+                </div>
+                <ul
+                  class="d-flex align-items-center justify-content-center gap-2"
+                >
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="d-block py-1 px-2 main-button button"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <!-- <div class="testimonials section-padding">
+      <div
+        class="container d-flex flex-column gap-5 justify-content-center align-items-center text-center"
+      >
+        <h2 class="fw-bolder display-3">Testimonials</h2>
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-md-8 col-lg-6">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="true"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    className="testi rounded p-3 px-lg-5 py-lg-4 d-flex flex-column justify-content-center align-items-center text-center gap-5"
+                  >
+                    <div className="testi-desc rounded px-4 py-5">
+                      <p>
+                        <sup>
+                          <i className="me-2 fa-solid fa-quote-left"></i>
+                        </sup>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat error voluptate quibusdam aspernatur optio
+                        consectetur illo qui quia pariatur tenetur id
+                        recusandae, voluptatum deleniti ullam fuga iste maxime,
+                        accusantium debitis?
+                        <sub>
+                          <i className="ms-2 fa-solid fa-quote-right"></i>
+                        </sub>
+                      </p>
+                    </div>
+                    <div className="testi-info">
+                      <img
+                        src="./images//testimonials-1.jpg"
+                        className="img-fluid w-25 rounded-circle"
+                        alt="testi img"
+                      />
+                      <h4 className="mb-0 mt-3">Ahmed Elbahy</h4>
+                      <small>CEO & Co-Founder</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+    <swiper-container>
+      <swiper-slide>
+        <div
+                    className="testi rounded p-3 px-lg-5 py-lg-4 d-flex flex-column justify-content-center align-items-center text-center gap-5"
+                  >
+                    <div className="testi-desc rounded px-4 py-5">
+                      <p>
+                        <sup>
+                          <i className="me-2 fa-solid fa-quote-left"></i>
+                        </sup>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat error voluptate quibusdam aspernatur optio
+                        consectetur illo qui quia pariatur tenetur id
+                        recusandae, voluptatum deleniti ullam fuga iste maxime,
+                        accusantium debitis?
+                        <sub>
+                          <i className="ms-2 fa-solid fa-quote-right"></i>
+                        </sub>
+                      </p>
+                    </div>
+                    <div className="testi-info">
+                      <img
+                        src="./images//testimonials-1.jpg"
+                        className="img-fluid w-25 rounded-circle"
+                        alt="testi img"
+                      />
+                      <h4 className="mb-0 mt-3">Ahmed Elbahy</h4>
+                      <small>CEO & Co-Founder</small>
+                    </div>
+                  </div>
+      </swiper-slide>
+      <swiper-slide>Slide 2</swiper-slide>
+      <swiper-slide>Slide 3</swiper-slide>
+      <swiper-slide>Slide ...</swiper-slide>
+    </swiper-container>
+    
+    <!-- Footer -->
+    <div class="footer py-5">
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-6 col-lg-4 d-flex flex-column gap-3 get-touch">
+            <h4 class="mb-3">Get In Touch</h4>
+            <p><span>Address: </span>Ashmoun, Menoufia, Egypt</p>
+            <p><span>Phone: </span>+2 0120793378</p>
+            <p><span>Mail: </span>ahmedelbahy06</p>
+            <p><span>Open Hours: </span>24/7 H</p>
+            <ul class="d-flex gap-2 align-items-center">
+              <li>
+                <a
+                  class="d-block py-1 px-2 main-button button fs-5"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="d-block py-1 px-2 main-button button fs-5"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="d-block py-1 px-2 main-button button fs-5"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="d-block py-1 px-2 main-button button fs-5"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex flex-column gap-3">
+            <h4 class="mb-3">Quick Links</h4>
+            <ul class="quick-links d-flex flex-column gap-2">
+              <li>
+                <i class="fa-solid fa-angle-right me-2"></i
+                ><a href="#">Terms OF Use</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right me-2"></i
+                ><a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right me-2"></i
+                ><a href="#">Cookies</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right me-2"></i><a href="#">Help</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right me-2"></i><a href="#">FQAs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex flex-column gap-3 newsletter">
+            <h4 class="mb-3">Newsletter</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, qui! Quibusdam magni ea facere aliquid at esse dicta
+              saepe nobis?
+            </p>
+            <form name="subs" action="#">
+              <div
+                class="subs p-2 d-flex align-items-center justify-content-between"
+              >
+                <input class="d-block" type="email" placeholder="E-mail" />
+                <button class="button main-button px-2 py-1">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <div class="end-footer py-3 text-center">
+      &copy; All Rights Reserved. Coded By <span>Ahmed Elbahy</span>
+    </div>
+
+    <!-- Up Btn -->
+    <button class="button secondary-button px-3 py-1" id="up-btn">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aboutDemo.js"></script>
+  </body>
+</html>
