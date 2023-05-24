@@ -71,7 +71,7 @@ const productsArr = [
     category: "women",
     title: "Short Sleeve",
     price: 50,
-    img: "../images/women1.jpg",
+    img: "../E-Commerce/images/women1.jpg",
   },
   {
     id: "id_2",
